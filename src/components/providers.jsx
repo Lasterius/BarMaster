@@ -13,9 +13,6 @@ const Providers = ({ children }) => {
 	if (!mounted) {
 		return null;
 	}
-	// if (!mounted) {
-	// 	return <>{children}</>;
-	// }
 
 	return <ThemeProvider attribute='class'>{children}</ThemeProvider>;
 };

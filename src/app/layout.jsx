@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
 		>
 			<body
 				className={`${jura.className} ${sofi.variable} bg-gradient-to-br from-first via-second
-         to-third dark:from-dfirst dark:via-dsecond dark:to-dthird dark:text-first text-dsecond`}
+         to-third dark:from-dfirst dark:via-dthird dark:to-dsecond dark:text-first text-dsecond`}
 			>
 				<Providers>
 					<Navbar />
