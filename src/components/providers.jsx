@@ -1,5 +1,6 @@
 'use client';
 
+import { SessionProvider } from 'next-auth/react';
 import { ThemeProvider } from 'next-themes';
 import { useEffect, useState } from 'react';
 
@@ -14,7 +15,11 @@ const Providers = ({ children }) => {
 		return null;
 	}
 
-	return <ThemeProvider attribute='class'>{children}</ThemeProvider>;
+	return (
+		<ThemeProvider attribute='class'>
+			<SessionProvider>{children}</SessionProvider>
+		</ThemeProvider>
+	);
 };
 
 export default Providers;
